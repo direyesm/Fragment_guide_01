@@ -12,18 +12,11 @@
         android:layout_height="match_parent"
         android:text="@string/hello_blank_fragment" />
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/image_left_margin"
-        android:layout_marginRight="@dimen/image_left_margin"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_surprised_pikachu_meme" />
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_surprised_pikachu_meme" />
+
 
 </FrameLayout>
