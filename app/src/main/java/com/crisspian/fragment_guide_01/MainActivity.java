@@ -40,13 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(!isFragmentShow){
-                    showFragment();
+                    showFragment("Wena loco");
                 }else{
                     closeFragment();
                 }
@@ -55,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void showFragment(){
+    private void showFragment(String saludo){
         // Generar la instancia del fragmento gracias al factory method
-        FirstFragment firstFragment = FirstFragment.newInstance("","");
+        FirstFragment firstFragment = FirstFragment.newInstance(saludo);
         // Obtener instancia del FragmentManager
         FragmentManager fragmentManager = getSupportFragmentManager();
         //Obtenemos e instanciamos una transaccion
